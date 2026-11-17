@@ -133,7 +133,7 @@ class MainActivity : Activity() {
                 it.systemBarsBehavior = WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
             }
         }
-        try { msm.addOnActiveSessionsChangedListener(sessionsCb, listener, ui) } catch (_: SecurityException) {}
+        try { msm.addOnActiveSessionsChangedListener(sessionsCb, listener, ui) } catch (e: SecurityException) {}
         attach()
         ui.post(ticker)
     }
@@ -141,7 +141,7 @@ class MainActivity : Activity() {
     override fun onPause() {
         super.onPause()
         ui.removeCallbacks(ticker)
-        try { msm.removeOnActiveSessionsChangedListener(sessionsCb) } catch (_: Exception) {}
+        try { msm.removeOnActiveSessionsChangedListener(sessionsCb) } catch (e: Exception) {}
         controller?.unregisterCallback(controllerCb)
         controller = null
     }
