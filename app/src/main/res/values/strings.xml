@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BT Музыка</string>
+    <string name="idle">Ничего не играет</string>
+    <string name="source_none">BLUETOOTH · НЕТ ИСТОЧНИКА</string>
+    <string name="prev">Предыдущий трек</string>
+    <string name="next">Следующий трек</string>
+    <string name="play_pause">Пауза / воспроизведение</string>
+    <string name="perm_text">Чтобы видеть трек, включите для приложения\nдоступ к уведомлениям (Notification access)</string>
+    <string name="perm_btn">Открыть настройки</string>
+    <string name="perm_adb">Меню недоступно. Выдайте доступ через adb: cmd notification allow_listener com.example.btplayer/com.example.btplayer.MediaListenerService</string>
+</resources>
